@@ -20,7 +20,7 @@ const NavBar = () => {
 
     
     return (
-        <nav>
+        <nav className="text-black bg-yellow-200 p-6">
         {/* <div className="md:hidden" onClick={()=>setOpen(!open)}>
 
         {
@@ -38,7 +38,9 @@ const NavBar = () => {
                 : <IoMenu className="text-2xl"></IoMenu>
             }
         </div>
-        <ul className="md:flex">
+        <ul className={`
+        ${open? 'top-32':'-top-60'}
+        duration-1000 md:static md:flex absolute bg-yellow-200 px-6`}>
         {
             routes.map(route=><Link key={route.id} route={route
             }></Link> )
