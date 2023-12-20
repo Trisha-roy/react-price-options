@@ -25,8 +25,7 @@ const Phones = () => {
             setPhones(phonesWithFakeData)
             setLoading(false)
         })
-        // axios.get('https://openapi.programming-hero.com/api/phones?search=iphone')
-        // .then(data=>console.log(data.data.data))
+
     },[])
     return (
         <div>
